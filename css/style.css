@@ -1,0 +1,363 @@
+/* -----Google font Lato used for my website---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* -----some presets added in the preset.css---- */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease-out;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height:1.7;
+    color:black;
+    box-sizing: border-box;
+    background-color: rebeccapurple;
+}
+
+/* ------nav style starts here---- */
+
+nav{
+
+    position: fixed;
+    width: 96vw;
+    background: rgb(9, 27, 51);
+    padding:1vh 3vw;
+    box-shadow: 0px 7px 12px 0px rgba(19, 19, 19, 0.233);
+    border-bottom: 1px rgba(199, 195, 195, 0.507) solid;
+}
+
+nav .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+.logo-title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: rgb(255, 255, 255);
+    width:30%;
+}
+nav .wrapper ul{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav .wrapper ul li a{
+    color: white;
+    padding: 1rem 3rem 1rem 2.3rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.la-home,.la-user-plus,.la-sign-in-alt{
+   margin-right: .9rem;
+}
+
+nav .wrapper ul li a:hover{
+    background-color: rgb(162, 0, 255);
+    border-radius: 1rem;
+}
+nav .wrapper ul li a:active{
+    background-color: rgb(93, 5, 194);
+    border-radius: 1rem;
+}
+
+/* ------nav style starts here---- */
+
+/* ----signup page and login page styles starts here------- */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.authentication{
+    background: linear-gradient(-45deg,#ad15d3, #6723d5, #5223d5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+
+
+.signup-form , .login-form , .reset-pass-form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    justify-content: center;
+    background-color: #111;
+    box-shadow: 0px 8px 16px 0px rgba(19, 19, 19, 0.493);
+    border: 2px rgba(199, 195, 195, 0.507) solid;
+}
+.signup-form h2, .login-form h2,.reset-pass-form h2{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border-bottom: 0.1rem rgb(63, 63, 63) solid;
+    width: 35rem;
+    text-shadow: 0 1px 0 #000;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+.signup-form form, .login-form form, .reset-pass-form form{
+    display: flex;
+    flex-direction: column;
+    padding:2rem;
+    align-items: center;
+    width: 32rem;
+}
+.signup-form form input, .login-form form input, .reset-pass-form form input{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px rgba(199, 195, 195, 0.507) solid;
+    border-radius: 1rem;
+    outline: none;
+    width: 28rem;
+    color: rgb(236, 231, 231);
+    background-color: rgba(36, 34, 37, 0.603);
+}
+.forgot-link{
+    color: white;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    font-family: "Poppins",sans-serif;
+    font-size: 1.3rem;
+}
+.forgot-link:hover{
+    color: rgb(214, 211, 211);
+}
+.forgot-link:active{
+    color: rgb(241, 233, 233);
+}
+
+.signup-form form button, .login-form form button, .reset-pass-form form button{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(68, 0, 255);
+    color: rgb(255, 255, 255);
+    width: 30rem;
+    border: 1px rgba(199, 195, 195, 0.507) solid;
+    cursor: pointer;
+    
+}
+.signup-form form button:hover, .login-form form button:hover, .reset-pass-form form button:hover{
+    background-color: rgba(136, 15, 235, 0.712);
+}   
+.signup-form form button:active, .login-form form button:active, .reset-pass-form form button:active{
+    background-color: rgba(112, 12, 194, 0.712);
+}  
+
+.error{
+    background-color: rgba(255, 25, 25, 0.692);
+    color: wheat;
+    width: 34rem;
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+}
+
+.success{
+    background-color: rgb(2, 153, 78);
+    color: wheat;
+    width: 34rem;
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+}
+/* ----signup page and login page styles ends here------- */
+
+/* -----Dashboard styling starts here----- */
+
+.dashboard{
+    display: flex;
+    background: linear-gradient(-45deg,#ad15d3, #6723d5, #5223d5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+.todo{
+    position: absolute;
+    top: 80px;
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+}
+.todo .todo-header{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(-45deg,#ad15d3, #6723d5, #5223d5);
+    padding: 2% 4%;
+    width: 92%;
+    border-bottom: 2px rgba(0, 0, 0, 0.219) solid;
+}
+.todo .todo-header .title h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.904);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.todo .todo-header .title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.todo .todo-header form{
+    padding: 1%;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(35, 35, 41);
+    box-shadow: 0px 8px 16px 0px rgba(19, 19, 19, 0.493);
+    border: 2px rgba(199, 195, 195, 0.507) solid;
+}
+.todo .todo-header form .category1{
+    background-color: rgb(41, 41, 49);
+    border: 1px rgba(199, 195, 195, 0.11) solid;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.category1 input{
+    font-family: "Poppins",sans-serif;
+    min-height: 40px;
+    padding: 10px;
+    background-color: rgb(58, 51, 61);
+    border: 1px rgba(199, 195, 195, 0.507) solid;
+    outline: none;
+    color: rgba(255, 255, 255, 0.836);
+}
+.add-task{
+    position: relative;
+    width: 80px;
+    font-size: 3rem;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border: 1px rgba(199, 195, 195, 0.507) solid;
+}
+.add-task:hover{
+    background-color: rgb(163, 65, 255);
+}
+.add-task:active{
+    background-color: rgb(116, 25, 201);
+}
+
+.todo .todo-body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(-45deg,#ad15d3, #6723d5, #5223d5);
+    padding: 2% 2%;
+    width: 96%;
+    border-bottom: 2px rgba(0, 0, 0, 0.479) solid;
+}
+.todo .todo-body h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.904);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.todo-body .category2{
+    font-family: "Poppins",sans-serif;
+    min-height: 40px;
+    padding: 5px;
+    background-color: rgb(230, 220, 233);
+}
+
+.category2 table{
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    color: rgba(29, 29, 29, 0.61);
+}
+.category2 table td{
+    border: 1px solid #252323;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    
+  }
+  .category2 table th{
+    border: 1px solid #252323;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+  }
+  
+  .category2 table tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+  }
+  .category2 table th:nth-child(1){
+   width: 40%;
+  }
+  .category2 table th:nth-child(4){
+    width: 10%;
+   }
+  .category2 table tr:nth-child(odd) {
+    background-color: rgb(224, 219, 219);
+  }
+
+  .btn{
+      outline: none;
+      border: 1px rgb(227, 209, 243) solid;
+      font-family: "Poppins" ,sans-serif;
+  }
+
+.delete-btn{
+    background-color: rgb(237, 100, 100);
+    color: white;
+}
+.la-times{
+    font-size: 30px;
+}
+.delete-btn:hover{
+background-color: rgb(233, 35, 68);
+}
+.delete-btn:active{
+background-color: rgb(219, 11, 46);
+}
+
+/* -----Dashboard styling starts here----- */
+
+
